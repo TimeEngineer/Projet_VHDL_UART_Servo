@@ -1,0 +1,17 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity MAE_servo is port(
+clk : in std_logic;
+tick : in std_logic;
+input : in std_logic_vector (7 downto 0);
+go : in std_logic;
+rst : in std_logic;
+output : out std_logic_vector (7 downto to 0);
+dataValid : out std_logic);
+end MAE_servo;
+
+architecture behav of MAE_servo is
+
+begin

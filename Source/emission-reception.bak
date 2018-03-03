@@ -1,0 +1,35 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity emission-reception is port(
+clk : in std_logic;
+input : in std_logic_vector (7 downto 0);
+go : in std_logic;
+rst : in std_logic;
+Tx : out std_logic);
+end emission;
+
+architecture behav of emission is
+signal Tx : std_logic;
+
+component emission port(
+clk : in std_logic;
+input : in std_logic_vector (7 downto 0);
+go : in std_logic;
+rst : in std_logic;
+Tx : out std_logic);
+end component;
+
+component reception port(
+clk : in std_logic;
+Rx : in std_logic;
+rst : in std_logic;
+dataValid : out std_logic;
+Rx_error : out std_logic;
+output : out std_logic_vector (7 downto 0));
+end component;
+
+begin
+C0 : MAE_emission port map(clk => clk, tick => tick, input => input, go => go, rst => rst, Tx => Tx);
+C1 : MAE_reception port map(clk => clk, tick => tick, Rx => Rx, rst => rst, dataValid => dataValid, Rx_error => Rx_error, clr => clr, output => output);
+end behav;
