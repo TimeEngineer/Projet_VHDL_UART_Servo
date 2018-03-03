@@ -25,20 +25,20 @@ Library IEEE;
   use IEEE.numeric_std.all;
 
 -- ---------------------------------------
-    Entity SERVO is
+    Entity SERVO1 is
 -- ---------------------------------------
       Port ( Clk     : In  std_logic;  -- main clock
              Rst     : In  std_logic;  -- asynch Reset
              Tick    : In  std_logic;  -- one clock period high, 7us repetition rate !
              Start   : In  std_logic;  -- Tested only when Done
-             Posit   : in std_logic_vector (7 downto 0); -- Pulse length
+             Posit   : In std_logic_vector (7 downto 0); -- Pulse length
              Done    : out std_logic;  -- indicates end of pulse after deadtime
              Q       : out std_logic   -- Servo PWM output
            );
-end entity SERVO;
+end entity SERVO1;
 
 -- ---------------------------------------
-    Architecture RTL of SERVO is
+    Architecture RTL of SERVO1 is
 -- ---------------------------------------
 constant MinPulse : positive := 500;  -- 0.5 ms min pulse
 constant DeadTime : positive := 50;   -- 50 us dead time

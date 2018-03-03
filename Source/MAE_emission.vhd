@@ -3,21 +3,21 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity MAE_emission is port(
-clk : in std_logic;
-tick : in std_logic;
-input : in std_logic_vector (7 downto 0);
-go: in std_logic;
-rst : in std_logic;
-Tx : out std_logic);
+  clk	 	: in std_logic;
+  tick 		: in std_logic;
+  input 	: in std_logic_vector (7 downto 0);
+  go		: in std_logic;
+  rst 		: in std_logic;
+  Tx 		: out std_logic);
 end MAE_emission;
 
 architecture behav of MAE_emission is
-signal i : natural := 0;
+signal i 	: natural := 0;
 type state_type is
 (Etat0, Etat1, Etat2);
 signal EtatPresent: state_type;
-begin
 
+begin
 clocked : process(clk, rst)
 begin
   if (rst = '1') then

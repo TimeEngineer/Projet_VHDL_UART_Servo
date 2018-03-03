@@ -6,13 +6,13 @@ entity tb_diviseur is
 end entity;
 
 architecture bench of tb_diviseur is
-signal Tclk : std_logic := '0';
-signal Tclr : std_logic;
-signal Ttick1 : std_logic;
-signal Ttick2 : std_logic;
-signal Done : boolean := False;
+signal Tclk 	: std_logic := '0';
+signal Tclr 	: std_logic;
+signal Ttick1 	: std_logic;
+signal Ttick2 	: std_logic;
+signal Done 	: boolean := False;
 
-Begin
+begin
 -- instanciation du composant à tester
 UUT1: entity work.Diviseur_reception(behav) port map(
 clk => Tclk, clr => Tclr,

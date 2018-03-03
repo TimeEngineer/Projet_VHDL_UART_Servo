@@ -6,16 +6,16 @@ entity tb_reception is
 end entity;
 
 architecture bench of tb_reception is
-signal Tclk : std_logic := '0';
-signal Tinput : std_logic_vector (7 downto 0);
-signal Tgo : std_logic;
-signal Trst : std_logic := '0';
-signal TdataValid : std_logic;
-signal TRx_error : std_logic;
-signal Toutput : std_logic_vector (7 downto 0);
-signal Done : boolean := False;
+signal Tclk 		: std_logic := '0';
+signal Tinput 		: std_logic_vector (7 downto 0);
+signal Tgo 		: std_logic;
+signal Trst 		: std_logic := '0';
+signal TdataValid 	: std_logic;
+signal TRx_error 	: std_logic;
+signal Toutput 		: std_logic_vector (7 downto 0);
+signal Done 		: boolean := False;
 
-Begin
+begin
 -- instanciation du composant à tester
 UUT1: entity work.emissionreception(behav) port map(
 clk => Tclk, input => Tinput, go => Tgo, rst => Trst,
@@ -29,17 +29,14 @@ Tgo <= '0';
 wait for 200 us;
 Tinput <= "01000000";
 Tgo <= '1';
-wait for 8.7 us;
+wait for 5 us;
 Tgo <= '0';
 wait for 100 us;
-TinPut <= "00000000";
-wait for 400 us;
 Tinput <= "00000000";
-Tgo <= '0';
 wait for 200 us;
 Tinput <= "10100001";
 Tgo <= '1';
-wait for 8.7 us;
+wait for 5 us;
 Tgo <= '0';
 wait for 100 us;
 TinPut <= "00000000";
