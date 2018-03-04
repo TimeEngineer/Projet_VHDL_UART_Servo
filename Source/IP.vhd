@@ -24,14 +24,14 @@ signal Error 	: std_logic;
 
 component IPUart port(
   clk 		: in std_logic;
-  input 	: in std_logic_vector (7 downto 0);
-  go 		: in std_logic;
+  input 	: in std_logic_vector (7 downto 0); -- Transmitter
+  go 		: in std_logic;	-- Transmitter
   rst 		: in std_logic;
-  Tx 		: out std_logic;
-  Rx 		: in std_logic;
-  dataValid 	: out std_logic;
-  Rx_Error 	: out std_logic;
-  output 	: out std_logic_vector (7 downto 0));
+  Tx 		: out std_logic; -- Transmitter
+  Rx 		: in std_logic; -- Receiver
+  dataValid 	: out std_logic; -- Receiver
+  Rx_Error 	: out std_logic; -- Receiver
+  output 	: out std_logic_vector (7 downto 0)); -- Receiver
 end component;
 
 component decoder port(

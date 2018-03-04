@@ -14,12 +14,15 @@ signal Done 	: boolean := False;
 
 begin
 -- instanciation du composant à tester
-UUT1: entity work.Diviseur_reception(behav) port map(
-clk => Tclk, clr => Tclr,
-tick => Ttick1);
-UUT2: entity work.Diviseur_emission(behav) port map(
-clk => Tclk,
-tick => Ttick2);
+UUT1: entity work.diviseur_reception(behav) port map(
+	clk => Tclk,
+	clr => Tclr,
+	tick => Ttick1);
+
+UUT2: entity work.diviseur_emission(behav) port map(
+	clk => Tclk,
+	tick => Ttick2);
+
 -- Génération d'une horloge
 Tclk <= '0' when Done else not Tclk after 20 ns;
 -- Génération d?un reset au début

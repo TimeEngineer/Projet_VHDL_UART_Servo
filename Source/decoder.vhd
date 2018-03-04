@@ -33,7 +33,6 @@ end component;
 
 component MAE_servo port(
   clk 			: in std_logic;
-  tick 			: in std_logic;
   input 		: in std_logic_vector (7 downto 0);
   go 			: in std_logic;
   rst 			: in std_logic;
@@ -81,7 +80,7 @@ end component;
 
 begin
 C0 : fdiv 	port map(Clk => Clk, Rst => Rst, Tick7us => Tick);
-C1 : MAE_servo 	port map(clk => Clk, tick => Tick, input => Input, go => Start, rst => Rst, output0 => Posit0, output1 => Posit1, output2 => Posit2, dataValid0 => Start0, dataValid1 => Start1, dataValid2 => Start2, input_Error => input_Error);
+C1 : MAE_servo 	port map(clk => Clk, input => Input, go => Start, rst => Rst, output0 => Posit0, output1 => Posit1, output2 => Posit2, dataValid0 => Start0, dataValid1 => Start1, dataValid2 => Start2, input_Error => input_Error);
 C2 : servo0 	port map(Clk => Clk, Rst => Rst, Tick => Tick, Start => Start0, Posit => Posit0, Done => Done0, Q => Q0);
 C3 : servo1 	port map(Clk => Clk, Rst => Rst, Tick => Tick, Start => Start1, Posit => Posit1, Done => Done1, Q => Q1);
 C4 : servo2 	port map(Clk => Clk, Rst => Rst, Tick => Tick, Start => Start2, Posit => Posit2, Done => Done2, Q => Q2); 

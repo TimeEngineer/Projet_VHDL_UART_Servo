@@ -14,7 +14,7 @@ architecture behav of reception is
 signal tick 	: std_logic;
 signal clear 	: std_logic;
 
-component Diviseur_reception port(
+component diviseur_reception port(
   clk 		: in std_logic;
   clr 		: in std_logic;
   tick 		: out std_logic);
@@ -32,6 +32,6 @@ component MAE_reception port(
 end component;
 
 begin
-C0 : Diviseur_reception port map(clk => clk, clr => clear, tick => tick);
+C0 : diviseur_reception port map(clk => clk, clr => clear, tick => tick);
 C1 : MAE_reception 	port map(clk => clk, tick => tick, Rx => Rx, rst => rst, clr => clear, dataValid => dataValid, Rx_Error => Rx_Error, output => output);
 end behav;
