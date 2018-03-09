@@ -26,7 +26,7 @@ begin
       start <= '1';
       i <= 0;
     end if;
-    if (i < 1000000) then
+    if (i < 1000) then
       if (tick = '1') then
         i <= i + 1;
 	start <= '1';
