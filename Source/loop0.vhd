@@ -26,10 +26,14 @@ begin
       start <= '1';
       i <= 0;
     end if;
-    if (tick = '1') then
-      i <= i + 1;
-    end if
-    if (i = 1000000) then
+    if (i < 1000000) then
+      if (tick = '1') then
+        i <= i + 1;
+	start <= '1'
+      else
+	start <= '0';
+      end if;
+    else
       i <= 0;
       start <= '0';
     end if;
