@@ -86,7 +86,6 @@ end component;
 
 component loop0 port(
   clk     		: in std_logic;
-  tick			: in std_logic;  
   input   		: in std_logic_vector (7 downto 0);
   dataValid		: in std_logic;
   rst			: in std_logic;
@@ -99,9 +98,9 @@ C0 : fdiv 	port map(Clk => Clk, Rst => Rst, Tick7us => Tick);
 C1 : MAE_servo 	port map(clk => Clk, input => Input, go => Start, rst => Rst,
 			output0 => tempVector0, output1 => tempVector1, output2 => tempVector2,
 			dataValid0 => temp0, dataValid1 => temp1, dataValid2 => temp2, input_Error => input_Error);
-C2 : loop0	port map(clk => clk, tick => tick, input => tempVector0, dataValid => temp0, rst => Rst, output => Posit0, start => Start0); 
-C3 : loop0	port map(clk => clk, tick => tick, input => tempVector1, dataValid => temp1, rst => Rst, output => Posit1, start => Start1);
-C4 : loop0	port map(clk => clk, tick => tick, input => tempVector2, dataValid => temp2, rst => Rst, output => Posit2, start => Start2);
+C2 : loop0	port map(clk => clk, input => tempVector0, dataValid => temp0, rst => Rst, output => Posit0, start => Start0); 
+C3 : loop0	port map(clk => clk, input => tempVector1, dataValid => temp1, rst => Rst, output => Posit1, start => Start1);
+C4 : loop0	port map(clk => clk, input => tempVector2, dataValid => temp2, rst => Rst, output => Posit2, start => Start2);
 C5 : servo0 	port map(Clk => Clk, Rst => Rst, Tick => Tick, Start => Start0, Posit => Posit0, Done => Done0, Q => Q0);
 C6 : servo1 	port map(Clk => Clk, Rst => Rst, Tick => Tick, Start => Start1, Posit => Posit1, Done => Done1, Q => Q1);
 C7 : servo2 	port map(Clk => Clk, Rst => Rst, Tick => Tick, Start => Start2, Posit => Posit2, Done => Done2, Q => Q2); 
