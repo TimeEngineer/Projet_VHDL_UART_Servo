@@ -26,8 +26,8 @@ begin
       i <= 0;
       start <= '1';
     end if;
-    if (i < 100) then
-      output <= reg;
+    output <= reg;
+    if (i < 2500000) then
       i <= i+1;
     else
 	start <= '0';
