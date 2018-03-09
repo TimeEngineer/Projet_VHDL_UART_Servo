@@ -29,6 +29,8 @@ begin
     if (i < 100) then
       output <= reg;
       i <= i+1;
+    else
+	start <= '0';
     end if;
   end if;
 end process clocked;
