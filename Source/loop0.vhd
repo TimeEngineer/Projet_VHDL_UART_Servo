@@ -10,8 +10,7 @@ entity loop0 is port(
   start		: out std_logic);
 end loop0;
 
-architecture behav of loop0 is
-signal reg 	: std_logic_vector (7 downto 0);
+architecture behav of loop1 is
 signal i 	: natural;
 
 begin
@@ -19,18 +18,17 @@ clocked : process(clk, rst)
 begin
   if (rst = '1') then
     start <= '0';
-    reg <= (others => '0');
+    i <= 0;
   elsif (clk'event and clk = '1') then
     if (dataValid = '1') then
-      reg <= input;
-      i <= 0;
+      output <= input;
       start <= '1';
+      i <= 0;
     end if;
-    output <= reg;
-    if (i < 2500000) then
-      i <= i+1;
-    else
-	start <= '0';
+    i <= i + 1;
+    if (i = 2500000) then
+      i <= 0;
+      start <= '0';
     end if;
   end if;
 end process clocked;
