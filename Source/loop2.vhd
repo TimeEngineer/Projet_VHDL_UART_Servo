@@ -10,7 +10,7 @@ entity loop2 is port(
   start		: out std_logic);
 end loop2;
 
-architecture behav of loop1 is
+architecture behav of loop2 is
 signal i 	: natural;
 
 begin
