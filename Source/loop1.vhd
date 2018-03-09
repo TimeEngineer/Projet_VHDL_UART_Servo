@@ -26,7 +26,7 @@ begin
       i <= 0;
     end if;
     i <= i + 1;
-    if (i = 25000000) then
+    if (i = 250000000) then
       i <= 0;
       start <= '0';
     end if;
