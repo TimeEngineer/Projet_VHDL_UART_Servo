@@ -45,7 +45,7 @@ begin
       dataValid2 <= '0';
       input_Error <= '0';
       if (go = '1' and input = x"73") then
-			EtatPresent <= Etat1;
+	EtatPresent <= Etat1;
       end if;
 
     when Etat1 =>
