@@ -12,31 +12,17 @@ entity loop1 is port(
 end loop1;
 
 architecture behav of loop1 is
-signal i 	: natural;
 
 begin
 clocked : process(clk, rst)
 begin
   if (rst = '1') then
-    start <= '0';
-    i <= 0;
+    start <= '0'
   elsif (clk'event and clk = '1') then
     if (dataValid = '1') then
       output <= input;
       start <= '1';
-      i <= 0;
     end if;
-    if (i < 1000000) then
-      if (tick = '1') then
-        i <= i + 1;
-	start <= '1';
-      else
-	start <= '0';
-      end if;
-    else
-      i <= 0;
-      start <= '0';
-    end if;
-  end if;
+    start <= '0'
 end process clocked;
 end behav;
