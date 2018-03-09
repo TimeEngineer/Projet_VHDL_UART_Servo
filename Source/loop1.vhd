@@ -12,6 +12,7 @@ end loop1;
 
 architecture behav of loop1 is
 signal reg 	: std_logic_vector (7 downto 0);
+signal i 	: natural;
 
 begin
 clocked : process(clk, rst)
@@ -22,9 +23,13 @@ begin
   elsif (clk'event and clk = '1') then
     if (dataValid = '1') then
       reg <= input;
+      i <= 0;
       start <= '1';
     end if;
-    output <= reg;
+    if (i < 100) then
+      output <= reg;
+      i <= i+1;
+    end if;
   end if;
 end process clocked;
 end behav;
