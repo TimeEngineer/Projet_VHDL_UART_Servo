@@ -29,7 +29,7 @@ begin
     if (i < 1000000) then
       if (tick = '1') then
         i <= i + 1;
-	start <= '1'
+	start <= '1';
       else
 	start <= '0';
       end if;
