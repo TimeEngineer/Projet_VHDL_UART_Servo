@@ -27,9 +27,6 @@ signal input_Error 	: std_logic;
 signal tempVector0	: std_logic_vector (7 downto 0);
 signal tempVector1	: std_logic_vector (7 downto 0);
 signal tempVector2	: std_logic_vector (7 downto 0);
-signal temp0 		: std_logic;
-signal temp1 		: std_logic;
-signal temp2 		: std_logic;
 
 component fdiv port(
   Clk     		: in    std_logic;
@@ -51,29 +48,7 @@ component MAE_servo port(
   input_Error 		: out std_logic);
 end component;
 
-component servo0 port(
-  Clk     		: in  std_logic;  -- main clock
-  Rst     		: in  std_logic;  -- asynch Reset
-  Tick    		: in  std_logic;  -- one clock period high, 7us repetition rate !
-  Start   		: in  std_logic;  -- Tested only when Done
-  Posit   		: in std_logic_vector (7 downto 0); -- Pulse length
-  Done    		: out std_logic;  -- indicates end of pulse after deadtime
-  Q       		: out std_logic   -- Servo PWM output
-);
-end component;
-
-component servo1 port(
-  Clk     		: in  std_logic;  -- main clock
-  Rst     		: in  std_logic;  -- asynch Reset
-  Tick    		: in  std_logic;  -- one clock period high, 7us repetition rate !
-  Start   		: in  std_logic;  -- Tested only when Done
-  Posit   		: in std_logic_vector (7 downto 0); -- Pulse length
-  Done    		: out std_logic;  -- indicates end of pulse after deadtime
-  Q       		: out std_logic   -- Servo PWM output
-);
-end component;
-
-component servo2 port(
+component servo port(
   Clk     		: in  std_logic;  -- main clock
   Rst     		: in  std_logic;  -- asynch Reset
   Tick    		: in  std_logic;  -- one clock period high, 7us repetition rate !
@@ -89,25 +64,15 @@ component converter port (
   output			: out std_logic_vector (7 downto 0));
 end component;
 
-component loop0 port (
-  tick     	: in std_logic;
-  dataValid	: in std_logic;
-  rst		: in std_logic;
-  start		: out std_logic);
-end component;
-
 begin
 C0 : fdiv 	port map(Clk => Clk, Rst => Rst, Tick7us => Tick);
 C1 : MAE_servo 	port map(clk => Clk, input => Input, go => Start, rst => Rst,
 			output0 => tempVector0, output1 => tempVector1, output2 => tempVector2,
-			dataValid0 => temp0, dataValid1 => temp1, dataValid2 => temp2, input_Error => input_Error);
+			dataValid0 => Start0, dataValid1 => Start1, dataValid2 => Start2, input_Error => input_Error);
 C2 : converter port map(input => tempVector0, output => Posit0);
 C3 : converter port map(input => tempVector1, output => Posit1);
 C4 : converter port map(input => tempVector2, output => Posit2);
-C5 : loop0 		port map(tick => clk, dataValid => temp0, rst => Rst, start => Start0);
-C6 : loop0 		port map(tick => clk, dataValid => temp1, rst => Rst, start => Start1);
-C7 : loop0 		port map(tick => clk, dataValid => temp2, rst => Rst, start => Start2);			
-C8 : servo0 	port map(Clk => Clk, Rst => Rst, Tick => Tick, Start => Start0, Posit => Posit0, Done => Done0, Q => Q0);
-C9 : servo1 	port map(Clk => Clk, Rst => Rst, Tick => Tick, Start => Start1, Posit => Posit1, Done => Done1, Q => Q1);
-C10 : servo2 	port map(Clk => Clk, Rst => Rst, Tick => Tick, Start => Start2, Posit => Posit2, Done => Done2, Q => Q2); 
+C5 : servo  	port map(Clk => Clk, Rst => Rst, Tick => Tick, Start => Start0, Posit => Posit0, Done => Done0, Q => Q0);
+C6 : servo	 	port map(Clk => Clk, Rst => Rst, Tick => Tick, Start => Start1, Posit => Posit1, Done => Done1, Q => Q1);
+C7 : servo	 	port map(Clk => Clk, Rst => Rst, Tick => Tick, Start => Start2, Posit => Posit2, Done => Done2, Q => Q2); 
 end behav;
