@@ -24,6 +24,12 @@ signal Start0 		: std_logic;
 signal Start1 		: std_logic;
 signal Start2 		: std_logic;
 signal input_Error 	: std_logic;
+signal tempVector0	: std_logic_vector (7 downto 0);
+signal tempVector1	: std_logic_vector (7 downto 0);
+signal tempVector2	: std_logic_vector (7 downto 0);
+signal temp0 		: std_logic;
+signal temp1 		: std_logic;
+signal temp2 		: std_logic;
 
 component fdiv port(
   Clk     		: in    std_logic;
@@ -78,12 +84,30 @@ component servo2 port(
 );
 end component;
 
+component converter port (
+  input			: in std_logic_vector (7 downto 0);
+  output			: out std_logic_vector (7 downto 0));
+end component;
+
+component loop0 port (
+  tick     	: in std_logic;
+  dataValid	: in std_logic;
+  rst		: in std_logic;
+  start		: out std_logic);
+end component;
+
 begin
 C0 : fdiv 	port map(Clk => Clk, Rst => Rst, Tick7us => Tick);
 C1 : MAE_servo 	port map(clk => Clk, input => Input, go => Start, rst => Rst,
-			output0 => Posit0, output1 => Posit1, output2 => Posit2,
-			dataValid0 => Start0, dataValid1 => Start1, dataValid2 => Start2, input_Error => input_Error);
-C5 : servo0 	port map(Clk => Clk, Rst => Rst, Tick => Tick, Start => Start0, Posit => Posit0, Done => Done0, Q => Q0);
-C6 : servo1 	port map(Clk => Clk, Rst => Rst, Tick => Tick, Start => Start1, Posit => Posit1, Done => Done1, Q => Q1);
-C7 : servo2 	port map(Clk => Clk, Rst => Rst, Tick => Tick, Start => Start2, Posit => Posit2, Done => Done2, Q => Q2); 
+			output0 => tempVector0, output1 => tempVector1, output2 => tempVector2,
+			dataValid0 => temp0, dataValid1 => temp1, dataValid2 => temp2, input_Error => input_Error);
+C2 : converter port map(input => tempVector0, output => Posit0);
+C3 : converter port map(input => tempVector1, output => Posit1);
+C4 : converter port map(input => tempVector2, output => Posit2);
+C5 : loop0 		port map(tick => clk, dataValid => temp0, rst => Rst, start => Start0);
+C6 : loop0 		port map(tick => clk, dataValid => temp1, rst => Rst, start => Start1);
+C7 : loop0 		port map(tick => clk, dataValid => temp2, rst => Rst, start => Start2);			
+C8 : servo0 	port map(Clk => Clk, Rst => Rst, Tick => Tick, Start => Start0, Posit => Posit0, Done => Done0, Q => Q0);
+C9 : servo1 	port map(Clk => Clk, Rst => Rst, Tick => Tick, Start => Start1, Posit => Posit1, Done => Done1, Q => Q1);
+C10 : servo2 	port map(Clk => Clk, Rst => Rst, Tick => Tick, Start => Start2, Posit => Posit2, Done => Done2, Q => Q2); 
 end behav;
