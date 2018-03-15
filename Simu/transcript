@@ -1,0 +1,359 @@
+# OpenFile servo.do 
+vlib work
+vcom -reportprogress 300 -work work /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Simu/tb_servo.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_servo
+# -- Compiling architecture bench of tb_servo
+# ** Error: (vcom-11) Could not find work.mae_servo.
+# ** Error: /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Simu/tb_servo.vhd(25): (vcom-1195) Cannot find expanded name "work.MAE_servo".
+# ** Error: /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Simu/tb_servo.vhd(25): Unknown expanded name.
+# ** Error: /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Simu/tb_servo.vhd(95): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Simu/tb_servo.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_servo
+# -- Compiling architecture bench of tb_servo
+# ** Error: (vcom-11) Could not find work.mae_servo.
+# ** Error: /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Simu/tb_servo.vhd(25): (vcom-1195) Cannot find expanded name "work.MAE_servo".
+# ** Error: /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Simu/tb_servo.vhd(25): Unknown expanded name.
+# ** Error: /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Simu/tb_servo.vhd(95): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Source/converter.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity converter
+# -- Compiling architecture behav of converter
+vcom -reportprogress 300 -work work /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Source/decoder.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder
+# -- Compiling architecture behav of decoder
+vcom -reportprogress 300 -work work /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Source/diviseur_emission.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity diviseur_emission
+# -- Compiling architecture behav of diviseur_emission
+vcom -reportprogress 300 -work work /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Source/diviseur_reception.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity diviseur_reception
+# -- Compiling architecture behav of diviseur_reception
+vcom -reportprogress 300 -work work /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Source/emission.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity emission
+# -- Compiling architecture behav of emission
+vcom -reportprogress 300 -work work /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Source/emissionreception.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity emissionreception
+# -- Compiling architecture behav of emissionreception
+vcom -reportprogress 300 -work work /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Source/emissionreceptionservo.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity emissionreceptionservo
+# -- Compiling architecture behav of emissionreceptionservo
+vcom -reportprogress 300 -work work /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Source/fdiv.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity FDIV
+# -- Compiling architecture RTL of FDIV
+vcom -reportprogress 300 -work work /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Source/IP.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity IP
+# -- Compiling architecture behav of IP
+vcom -reportprogress 300 -work work /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Source/IPUart.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity IPUart
+# -- Compiling architecture behav of IPUart
+vcom -reportprogress 300 -work work /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Source/MAE_emission.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity MAE_emission
+# -- Compiling architecture behav of MAE_emission
+vcom -reportprogress 300 -work work /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Source/MAE_reception.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity MAE_reception
+# -- Compiling architecture behav of MAE_reception
+vcom -reportprogress 300 -work work /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Source/MAE_servo.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity MAE_servo
+# -- Compiling architecture behav of MAE_servo
+vcom -reportprogress 300 -work work /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Source/reception.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reception
+# -- Compiling architecture behav of reception
+vcom -reportprogress 300 -work work /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Source/servo0.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SERVO0
+# -- Compiling architecture RTL of SERVO0
+vcom -reportprogress 300 -work work /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Source/servo1.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SERVO1
+# -- Compiling architecture RTL of SERVO1
+vcom -reportprogress 300 -work work /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Source/servo2.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SERVO2
+# -- Compiling architecture RTL of SERVO2
+vcom -reportprogress 300 -work work /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Simu/tb_servo.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_servo
+# -- Compiling architecture bench of tb_servo
+# -- Loading entity MAE_servo
+vcom -reportprogress 300 -work work /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Simu/tb_reception.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_reception
+# -- Compiling architecture bench of tb_reception
+# -- Loading entity emissionreception
+vcom -reportprogress 300 -work work /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Simu/tb_IP.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_IP
+# -- Compiling architecture bench of tb_IP
+# -- Loading entity emissionreceptionservo
+vcom -reportprogress 300 -work work /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Simu/tb_emission.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_emission
+# -- Compiling architecture bench of tb_emission
+# -- Loading entity emission
+vcom -reportprogress 300 -work work /nfs/home/sasl/eleves/ei-se/3413954/Bureau/VHDL_UART/Projet_VHDL_UART_Servo/Simu/tb_diviseur.vhd
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_diviseur
+# -- Compiling architecture bench of tb_diviseur
+# -- Loading entity diviseur_reception
+# -- Loading entity diviseur_emission
+vsim work.tb_diviseur
+# vsim work.tb_diviseur 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_diviseur(bench)
+# Loading work.diviseur_reception(behav)
+# Loading work.diviseur_emission(behav)
+run
+run
+restart
+add wave -position insertpoint  \
+sim:/tb_diviseur/Tclk \
+sim:/tb_diviseur/Tclr \
+sim:/tb_diviseur/Ttick1 \
+sim:/tb_diviseur/Ttick2
+run
+restart
+run
+vsim work.tb_emission
+# vsim work.tb_emission 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_emission(bench)
+# Loading work.emission(behav)
+# Loading work.diviseur_emission(behav)
+# Loading work.mae_emission(behav)
+add wave -position insertpoint  \
+sim:/tb_emission/Tclk \
+sim:/tb_emission/Tinput \
+sim:/tb_emission/Tgo \
+sim:/tb_emission/Trst \
+sim:/tb_emission/TTx \
+sim:/tb_emission/Done
+run
+vsim work.tb_reception
+# vsim work.tb_reception 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_reception(bench)
+# Loading work.emissionreception(behav)
+# Loading work.emission(behav)
+# Loading work.diviseur_emission(behav)
+# Loading work.mae_emission(behav)
+# Loading work.reception(behav)
+# Loading work.diviseur_reception(behav)
+# Loading work.mae_reception(behav)
+add wave -position insertpoint  \
+sim:/tb_reception/Tclk \
+sim:/tb_reception/Tinput \
+sim:/tb_reception/Tgo \
+sim:/tb_reception/Trst \
+sim:/tb_reception/TdataValid \
+sim:/tb_reception/TRx_error \
+sim:/tb_reception/Toutput \
+sim:/tb_reception/Done
+run
+vsim work.tb_servo
+# vsim work.tb_servo 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_servo(bench)
+# Loading work.mae_servo(behav)
+add wave -position insertpoint  \
+sim:/tb_servo/Tclk \
+sim:/tb_servo/Tinput \
+sim:/tb_servo/Tgo \
+sim:/tb_servo/Trst \
+sim:/tb_servo/Toutput0 \
+sim:/tb_servo/Toutput1 \
+sim:/tb_servo/Toutput2 \
+sim:/tb_servo/TdataValid0 \
+sim:/tb_servo/TdataValid1 \
+sim:/tb_servo/TdataValid2 \
+sim:/tb_servo/Tinput_Error \
+sim:/tb_servo/Done
+run
+run
+vsim work.tb_ip
+# vsim work.tb_ip 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_ip(bench)
+# Loading work.emissionreceptionservo(behav)
+# Loading work.emissionreception(behav)
+# Loading work.emission(behav)
+# Loading work.diviseur_emission(behav)
+# Loading work.mae_emission(behav)
+# Loading work.reception(behav)
+# Loading work.diviseur_reception(behav)
+# Loading work.mae_reception(behav)
+# Loading work.decoder(behav)
+# Loading work.fdiv(rtl)
+# Loading work.mae_servo(behav)
+# Loading work.servo0(rtl)
+# Loading work.servo1(rtl)
+# Loading work.servo2(rtl)
+add wave -position insertpoint  \
+sim:/tb_ip/Tclk \
+sim:/tb_ip/Tinput \
+sim:/tb_ip/Tgo \
+sim:/tb_ip/Trst \
+sim:/tb_ip/TDone0 \
+sim:/tb_ip/TQ0 \
+sim:/tb_ip/TDone1 \
+sim:/tb_ip/TQ1 \
+sim:/tb_ip/TDone2 \
+sim:/tb_ip/TQ2 \
+sim:/tb_ip/Done
+run
+run
+run
+run
+add wave -position insertpoint  \
+sim:/tb_ip/Tclk \
+sim:/tb_ip/Tinput \
+sim:/tb_ip/Tgo \
+sim:/tb_ip/Trst \
+sim:/tb_ip/TDone0 \
+sim:/tb_ip/TQ0 \
+sim:/tb_ip/TDone1 \
+sim:/tb_ip/TQ1 \
+sim:/tb_ip/TDone2 \
+sim:/tb_ip/TQ2 \
+sim:/tb_ip/Done
+restart
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
