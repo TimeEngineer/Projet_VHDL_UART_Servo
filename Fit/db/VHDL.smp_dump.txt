@@ -1,0 +1,51 @@
+
+State Machine - |IP|decoder:C1|SERVO0:C7|State
+Name State.Relax State.Pulse State.Init State.Idle 
+State.Idle 0 0 0 0 
+State.Init 0 0 1 1 
+State.Pulse 0 1 0 1 
+State.Relax 1 0 0 1 
+
+State Machine - |IP|decoder:C1|SERVO0:C6|State
+Name State.Relax State.Pulse State.Init State.Idle 
+State.Idle 0 0 0 0 
+State.Init 0 0 1 1 
+State.Pulse 0 1 0 1 
+State.Relax 1 0 0 1 
+
+State Machine - |IP|decoder:C1|SERVO0:C5|State
+Name State.Relax State.Pulse State.Init State.Idle 
+State.Idle 0 0 0 0 
+State.Init 0 0 1 1 
+State.Pulse 0 1 0 1 
+State.Relax 1 0 0 1 
+
+State Machine - |IP|decoder:C1|MAE_servo:C1|EtatPresent
+Name EtatPresent.Etat7 EtatPresent.Etat6 EtatPresent.Etat5 EtatPresent.Etat4 EtatPresent.Etat3 EtatPresent.Etat2 EtatPresent.Etat1 EtatPresent.Etat0 
+EtatPresent.Etat0 0 0 0 0 0 0 0 0 
+EtatPresent.Etat1 0 0 0 0 0 0 1 1 
+EtatPresent.Etat2 0 0 0 0 0 1 0 1 
+EtatPresent.Etat3 0 0 0 0 1 0 0 1 
+EtatPresent.Etat4 0 0 0 1 0 0 0 1 
+EtatPresent.Etat5 0 0 1 0 0 0 0 1 
+EtatPresent.Etat6 0 1 0 0 0 0 0 1 
+EtatPresent.Etat7 1 0 0 0 0 0 0 1 
+
+State Machine - |IP|IPUart:C0|reception:C1|MAE_reception:C1|EtatPresent
+Name EtatPresent.Etat9 EtatPresent.Etat8 EtatPresent.Etat7 EtatPresent.Etat6 EtatPresent.Etat5 EtatPresent.Etat4 EtatPresent.Etat3 EtatPresent.Etat2 EtatPresent.Etat1 EtatPresent.Etat0 
+EtatPresent.Etat0 0 0 0 0 0 0 0 0 0 0 
+EtatPresent.Etat1 0 0 0 0 0 0 0 0 1 1 
+EtatPresent.Etat2 0 0 0 0 0 0 0 1 0 1 
+EtatPresent.Etat3 0 0 0 0 0 0 1 0 0 1 
+EtatPresent.Etat4 0 0 0 0 0 1 0 0 0 1 
+EtatPresent.Etat5 0 0 0 0 1 0 0 0 0 1 
+EtatPresent.Etat6 0 0 0 1 0 0 0 0 0 1 
+EtatPresent.Etat7 0 0 1 0 0 0 0 0 0 1 
+EtatPresent.Etat8 0 1 0 0 0 0 0 0 0 1 
+EtatPresent.Etat9 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |IP|IPUart:C0|emission:C0|MAE_emission:C1|EtatPresent
+Name EtatPresent.Etat2 EtatPresent.Etat1 EtatPresent.Etat0 
+EtatPresent.Etat0 0 0 0 
+EtatPresent.Etat1 0 1 1 
+EtatPresent.Etat2 1 0 1 
