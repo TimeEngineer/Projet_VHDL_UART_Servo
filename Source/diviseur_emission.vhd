@@ -9,7 +9,7 @@ end diviseur_emission;
 
 architecture behav of diviseur_emission is
 signal counter 	: unsigned (7 downto 0) := (others => '0');
-signal div 	: unsigned (7 downto 0) := "11011001"; --(217)
+signal div 	: unsigned (7 downto 0) := "11011001"; -- (217)
 
 begin
 clock_divider : process (clk)

@@ -10,7 +10,7 @@ end diviseur_reception;
 
 architecture behav of diviseur_reception is
 signal counter 	: unsigned (6 downto 0) := (others => '0');
-signal div 	: unsigned (6 downto 0) := "1101100"; --(108)
+signal div 	: unsigned (6 downto 0) := "1101100"; -- (108)
 
 begin
 clock_divider : process (clr, clk)

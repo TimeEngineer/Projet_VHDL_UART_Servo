@@ -3,16 +3,16 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity MAE_emission is port(
-  clk	 	: in std_logic;
-  tick 		: in std_logic;
-  input 	: in std_logic_vector (7 downto 0);
-  go		: in std_logic;
-  rst 		: in std_logic;
-  Tx 		: out std_logic);
+  clk	 	: in std_logic;				-- main clock
+  tick 		: in std_logic;				-- tick 8.7 us
+  input 	: in std_logic_vector (7 downto 0);	-- 1 byte input
+  go		: in std_logic;				-- message sended
+  rst 		: in std_logic;				-- reset
+  Tx 		: out std_logic);			-- serial output
 end MAE_emission;
 
 architecture behav of MAE_emission is
-signal i 	: natural := 0;
+signal i 	: natural := 0;				-- i = counter
 type state_type is
 (Etat0, Etat1, Etat2);
 signal EtatPresent: state_type;
@@ -38,7 +38,7 @@ begin
       Tx <= '0';
       EtatPresent <= Etat2;
       
-    when Etat2 =>
+    when Etat2 =>					-- sending data
       if (tick = '1') then
         if (i = 8) then  
           EtatPresent <= Etat0;

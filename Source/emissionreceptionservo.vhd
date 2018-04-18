@@ -1,13 +1,13 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity emissionreceptionservo is port(
-  clk 			: in std_logic;
-  input 		: in std_logic_vector (7 downto 0);
-  go 			: in std_logic;
-  rst 			: in std_logic;
-  Done0   		: out std_logic;  -- indicates end of pulse after deadtime
-  Q0      		: out std_logic;   -- Servo PWM output
+entity emissionreceptionservo is port( -- Block Transmitter + Receiver + Decoder for test bench
+  clk 			: in std_logic;				-- main clock
+  input 		: in std_logic_vector (7 downto 0);	-- 1 byte input
+  go 			: in std_logic;				-- message sended
+  rst 			: in std_logic;				-- reset
+  Done0   		: out std_logic;  			-- indicates end of pulse after deadtime
+  Q0      		: out std_logic;   			-- Servo PWM output
   Done1   		: out std_logic;
   Q1      		: out std_logic;
   Done2   		: out std_logic;
@@ -20,22 +20,22 @@ signal Rx_error  	: std_logic;
 signal output		: std_logic_vector (7 downto 0);
 
 component emissionreception port(
-  clk 			: in std_logic;
-  input 		: in std_logic_vector (7 downto 0);
-  go 			: in std_logic;
-  rst 			: in std_logic;
-  dataValid 		: out std_logic;
-  Rx_Error 		: out std_logic;
-  output 		: out std_logic_vector (7 downto 0));
+  clk 			: in std_logic;				-- main clock
+  input 		: in std_logic_vector (7 downto 0);	-- 1 byte input
+  go 			: in std_logic;				-- message sended
+  rst 			: in std_logic;				-- reset
+  dataValid 		: out std_logic;			-- message received
+  Rx_Error 		: out std_logic;			-- failed transmit
+  output 		: out std_logic_vector (7 downto 0));	-- 1 byte output
 end component;
 
 component decoder port(
-  Clk     		: in  std_logic;  -- main clock
-  Rst     		: in  std_logic;  -- asynch Reset
-  Start   		: in  std_logic;  -- Tested only when Done
+  Clk     		: in  std_logic;  			-- main clock
+  Rst     		: in  std_logic;  			-- asynch Reset
+  Start   		: in  std_logic;  			-- Tested only when Done
   Input   		: in std_logic_vector (7 downto 0);
-  Done0   		: out std_logic;  -- indicates end of pulse after deadtime
-  Q0      		: out std_logic;   -- Servo PWM output
+  Done0   		: out std_logic;  			-- indicates end of pulse after deadtime
+  Q0      		: out std_logic;  			-- Servo PWM output
   Done1   		: out std_logic;
   Q1      		: out std_logic;
   Done2   		: out std_logic;
