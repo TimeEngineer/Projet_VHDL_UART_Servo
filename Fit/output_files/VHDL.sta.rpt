@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for VHDL
-Thu Mar 15 12:54:23 2018
+Tue Apr 24 13:17:20 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -92,8 +92,8 @@ applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 2           ;
@@ -101,7 +101,7 @@ applicable agreement for further details.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ; < 0.1%      ;
-;     Processors 3-8         ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -298,49 +298,49 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; 0.391 ; decoder:C1|MAE_servo:C1|EtatPresent.Etat1                 ; decoder:C1|MAE_servo:C1|EtatPresent.Etat1                 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; decoder:C1|MAE_servo:C1|EtatPresent.Etat2                 ; decoder:C1|MAE_servo:C1|EtatPresent.Etat2                 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; decoder:C1|MAE_servo:C1|EtatPresent.Etat4                 ; decoder:C1|MAE_servo:C1|EtatPresent.Etat4                 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; decoder:C1|SERVO0:C5|State.Pulse                          ; decoder:C1|SERVO0:C5|State.Pulse                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; decoder:C1|SERVO0:C5|State.Relax                          ; decoder:C1|SERVO0:C5|State.Relax                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; decoder:C1|SERVO0:C5|Count[0]                             ; decoder:C1|SERVO0:C5|Count[0]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; decoder:C1|SERVO0:C5|Count[1]                             ; decoder:C1|SERVO0:C5|Count[1]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; decoder:C1|SERVO0:C5|Count[3]                             ; decoder:C1|SERVO0:C5|Count[3]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; decoder:C1|SERVO0:C5|State.Init                           ; decoder:C1|SERVO0:C5|State.Init                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; decoder:C1|SERVO0:C5|Count[8]                             ; decoder:C1|SERVO0:C5|Count[8]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; decoder:C1|SERVO:C5|State.Pulse                           ; decoder:C1|SERVO:C5|State.Pulse                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; decoder:C1|SERVO:C5|State.Relax                           ; decoder:C1|SERVO:C5|State.Relax                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; decoder:C1|SERVO:C5|Count[0]                              ; decoder:C1|SERVO:C5|Count[0]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; decoder:C1|SERVO:C5|Count[1]                              ; decoder:C1|SERVO:C5|Count[1]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; decoder:C1|SERVO:C5|Count[3]                              ; decoder:C1|SERVO:C5|Count[3]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; decoder:C1|SERVO:C5|State.Init                            ; decoder:C1|SERVO:C5|State.Init                            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; decoder:C1|SERVO:C5|Count[8]                              ; decoder:C1|SERVO:C5|Count[8]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; decoder:C1|MAE_servo:C1|dataValid1                        ; decoder:C1|MAE_servo:C1|dataValid1                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; decoder:C1|SERVO0:C6|Count[1]                             ; decoder:C1|SERVO0:C6|Count[1]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; decoder:C1|SERVO0:C6|Count[3]                             ; decoder:C1|SERVO0:C6|Count[3]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; decoder:C1|SERVO0:C6|Count[8]                             ; decoder:C1|SERVO0:C6|Count[8]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; decoder:C1|SERVO0:C6|State.Init                           ; decoder:C1|SERVO0:C6|State.Init                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; decoder:C1|SERVO0:C6|State.Pulse                          ; decoder:C1|SERVO0:C6|State.Pulse                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; decoder:C1|SERVO0:C6|State.Relax                          ; decoder:C1|SERVO0:C6|State.Relax                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; decoder:C1|SERVO0:C6|Count[0]                             ; decoder:C1|SERVO0:C6|Count[0]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; decoder:C1|SERVO:C6|Count[1]                              ; decoder:C1|SERVO:C6|Count[1]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; decoder:C1|SERVO:C6|Count[3]                              ; decoder:C1|SERVO:C6|Count[3]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; decoder:C1|SERVO:C6|Count[8]                              ; decoder:C1|SERVO:C6|Count[8]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; decoder:C1|SERVO:C6|State.Init                            ; decoder:C1|SERVO:C6|State.Init                            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; decoder:C1|SERVO:C6|State.Pulse                           ; decoder:C1|SERVO:C6|State.Pulse                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; decoder:C1|SERVO:C6|State.Relax                           ; decoder:C1|SERVO:C6|State.Relax                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; decoder:C1|SERVO:C6|Count[0]                              ; decoder:C1|SERVO:C6|Count[0]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.391 ; decoder:C1|MAE_servo:C1|dataValid2                        ; decoder:C1|MAE_servo:C1|dataValid2                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; decoder:C1|SERVO0:C7|State.Relax                          ; decoder:C1|SERVO0:C7|State.Relax                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; decoder:C1|SERVO0:C7|Count[8]                             ; decoder:C1|SERVO0:C7|Count[8]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; decoder:C1|SERVO0:C7|State.Init                           ; decoder:C1|SERVO0:C7|State.Init                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; decoder:C1|SERVO0:C7|State.Pulse                          ; decoder:C1|SERVO0:C7|State.Pulse                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; decoder:C1|SERVO0:C7|Count[0]                             ; decoder:C1|SERVO0:C7|Count[0]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; decoder:C1|SERVO0:C7|Count[1]                             ; decoder:C1|SERVO0:C7|Count[1]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; decoder:C1|SERVO0:C7|Count[3]                             ; decoder:C1|SERVO0:C7|Count[3]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; decoder:C1|SERVO0:C5|Q                                    ; decoder:C1|SERVO0:C5|Q                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; decoder:C1|SERVO0:C6|Q                                    ; decoder:C1|SERVO0:C6|Q                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
-; 0.391 ; decoder:C1|SERVO0:C7|Q                                    ; decoder:C1|SERVO0:C7|Q                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; decoder:C1|SERVO:C7|State.Relax                           ; decoder:C1|SERVO:C7|State.Relax                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; decoder:C1|SERVO:C7|Count[8]                              ; decoder:C1|SERVO:C7|Count[8]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; decoder:C1|SERVO:C7|State.Init                            ; decoder:C1|SERVO:C7|State.Init                            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; decoder:C1|SERVO:C7|State.Pulse                           ; decoder:C1|SERVO:C7|State.Pulse                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; decoder:C1|SERVO:C7|Count[0]                              ; decoder:C1|SERVO:C7|Count[0]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; decoder:C1|SERVO:C7|Count[1]                              ; decoder:C1|SERVO:C7|Count[1]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; decoder:C1|SERVO:C7|Count[3]                              ; decoder:C1|SERVO:C7|Count[3]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; decoder:C1|SERVO:C5|Q                                     ; decoder:C1|SERVO:C5|Q                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; decoder:C1|SERVO:C6|Q                                     ; decoder:C1|SERVO:C6|Q                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; decoder:C1|SERVO:C7|Q                                     ; decoder:C1|SERVO:C7|Q                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
 ; 0.534 ; IPUart:C0|reception:C1|MAE_reception:C1|output[7]         ; decoder:C1|MAE_servo:C1|regValue[7]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.800      ;
 ; 0.538 ; IPUart:C0|reception:C1|MAE_reception:C1|output[2]         ; decoder:C1|MAE_servo:C1|regValue[2]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.804      ;
 ; 0.539 ; IPUart:C0|reception:C1|MAE_reception:C1|i[30]             ; IPUart:C0|reception:C1|MAE_reception:C1|i[30]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.805      ;
 ; 0.555 ; decoder:C1|MAE_servo:C1|regSelector[0]                    ; decoder:C1|MAE_servo:C1|dataValid0                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.821      ;
 ; 0.556 ; decoder:C1|MAE_servo:C1|regSelector[0]                    ; decoder:C1|MAE_servo:C1|EtatPresent.Etat6                 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.822      ;
 ; 0.557 ; decoder:C1|MAE_servo:C1|regSelector[0]                    ; decoder:C1|MAE_servo:C1|EtatPresent.Etat7                 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.823      ;
-; 0.569 ; decoder:C1|SERVO0:C6|State.Init                           ; decoder:C1|SERVO0:C6|Q                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.835      ;
-; 0.618 ; decoder:C1|FDIV:C0|Tick7us                                ; decoder:C1|SERVO0:C6|State.Pulse                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.884      ;
-; 0.621 ; decoder:C1|FDIV:C0|Tick7us                                ; decoder:C1|SERVO0:C6|State.Relax                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.887      ;
-; 0.628 ; decoder:C1|FDIV:C0|Tick7us                                ; decoder:C1|SERVO0:C6|State.Idle                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.894      ;
+; 0.569 ; decoder:C1|SERVO:C6|State.Init                            ; decoder:C1|SERVO:C6|Q                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.835      ;
+; 0.618 ; decoder:C1|FDIV:C0|Tick7us                                ; decoder:C1|SERVO:C6|State.Pulse                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.884      ;
+; 0.621 ; decoder:C1|FDIV:C0|Tick7us                                ; decoder:C1|SERVO:C6|State.Relax                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.887      ;
+; 0.628 ; decoder:C1|FDIV:C0|Tick7us                                ; decoder:C1|SERVO:C6|State.Idle                            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.894      ;
 ; 0.671 ; IPUart:C0|reception:C1|MAE_reception:C1|output[3]         ; decoder:C1|MAE_servo:C1|regSelector[3]                    ; clk          ; clk         ; 0.000        ; 0.001      ; 0.938      ;
 ; 0.674 ; IPUart:C0|reception:C1|MAE_reception:C1|output[1]         ; decoder:C1|MAE_servo:C1|regValue[1]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.940      ;
-; 0.674 ; decoder:C1|SERVO0:C7|Count[2]                             ; decoder:C1|SERVO0:C7|Count[2]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.940      ;
+; 0.674 ; decoder:C1|SERVO:C7|Count[2]                              ; decoder:C1|SERVO:C7|Count[2]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.940      ;
 ; 0.675 ; IPUart:C0|reception:C1|MAE_reception:C1|output[6]         ; decoder:C1|MAE_servo:C1|regValue[6]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.941      ;
 ; 0.679 ; decoder:C1|MAE_servo:C1|EtatPresent.Etat6                 ; decoder:C1|MAE_servo:C1|dataValid1                        ; clk          ; clk         ; 0.000        ; 0.001      ; 0.946      ;
 ; 0.695 ; decoder:C1|FDIV:C0|Count[0]                               ; decoder:C1|FDIV:C0|Count[6]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.961      ;
-; 0.699 ; decoder:C1|SERVO0:C5|Count[2]                             ; decoder:C1|SERVO0:C5|Count[2]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.965      ;
+; 0.699 ; decoder:C1|SERVO:C5|Count[2]                              ; decoder:C1|SERVO:C5|Count[2]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.965      ;
 ; 0.701 ; decoder:C1|MAE_servo:C1|EtatPresent.Etat6                 ; decoder:C1|MAE_servo:C1|dataValid0                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.967      ;
 ; 0.702 ; decoder:C1|FDIV:C0|Count[0]                               ; decoder:C1|FDIV:C0|Count[3]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.968      ;
 ; 0.702 ; decoder:C1|FDIV:C0|Count[0]                               ; decoder:C1|FDIV:C0|Count[4]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.968      ;
@@ -348,7 +348,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; 0.704 ; IPUart:C0|reception:C1|MAE_reception:C1|output[1]         ; decoder:C1|MAE_servo:C1|regSelector[1]                    ; clk          ; clk         ; 0.000        ; 0.001      ; 0.971      ;
 ; 0.713 ; IPUart:C0|reception:C1|MAE_reception:C1|output[2]         ; decoder:C1|MAE_servo:C1|regSelector[2]                    ; clk          ; clk         ; 0.000        ; 0.001      ; 0.980      ;
 ; 0.713 ; IPUart:C0|reception:C1|MAE_reception:C1|output[7]         ; decoder:C1|MAE_servo:C1|regSelector[7]                    ; clk          ; clk         ; 0.000        ; 0.001      ; 0.980      ;
-; 0.714 ; decoder:C1|MAE_servo:C1|dataValid1                        ; decoder:C1|SERVO0:C6|State.Init                           ; clk          ; clk         ; 0.000        ; 0.001      ; 0.981      ;
+; 0.714 ; decoder:C1|MAE_servo:C1|dataValid1                        ; decoder:C1|SERVO:C6|State.Init                            ; clk          ; clk         ; 0.000        ; 0.001      ; 0.981      ;
 ; 0.717 ; IPUart:C0|reception:C1|MAE_reception:C1|output[5]         ; decoder:C1|MAE_servo:C1|regSelector[5]                    ; clk          ; clk         ; 0.000        ; 0.001      ; 0.984      ;
 ; 0.719 ; IPUart:C0|reception:C1|MAE_reception:C1|output[4]         ; decoder:C1|MAE_servo:C1|regValue[4]                       ; clk          ; clk         ; 0.000        ; 0.002      ; 0.987      ;
 ; 0.758 ; IPUart:C0|reception:C1|MAE_reception:C1|EtatPresent.Etat5 ; IPUart:C0|reception:C1|MAE_reception:C1|EtatPresent.Etat6 ; clk          ; clk         ; 0.000        ; 0.001      ; 1.025      ;
@@ -380,8 +380,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; 0.814 ; IPUart:C0|reception:C1|MAE_reception:C1|i[22]             ; IPUart:C0|reception:C1|MAE_reception:C1|i[22]             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.080      ;
 ; 0.814 ; IPUart:C0|reception:C1|MAE_reception:C1|EtatPresent.Etat1 ; IPUart:C0|reception:C1|MAE_reception:C1|EtatPresent.Etat2 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.080      ;
 ; 0.818 ; IPUart:C0|reception:C1|MAE_reception:C1|i[1]              ; IPUart:C0|reception:C1|MAE_reception:C1|i[1]              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.084      ;
-; 0.821 ; decoder:C1|SERVO0:C5|State.Init                           ; decoder:C1|SERVO0:C5|Q                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.087      ;
-; 0.831 ; decoder:C1|SERVO0:C7|State.Init                           ; decoder:C1|SERVO0:C7|Q                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.097      ;
+; 0.821 ; decoder:C1|SERVO:C5|State.Init                            ; decoder:C1|SERVO:C5|Q                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.087      ;
+; 0.831 ; decoder:C1|SERVO:C7|State.Init                            ; decoder:C1|SERVO:C7|Q                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.097      ;
 +-------+-----------------------------------------------------------+-----------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -747,42 +747,42 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; 0.215 ; decoder:C1|MAE_servo:C1|EtatPresent.Etat1                 ; decoder:C1|MAE_servo:C1|EtatPresent.Etat1                 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; decoder:C1|MAE_servo:C1|EtatPresent.Etat2                 ; decoder:C1|MAE_servo:C1|EtatPresent.Etat2                 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; decoder:C1|MAE_servo:C1|EtatPresent.Etat4                 ; decoder:C1|MAE_servo:C1|EtatPresent.Etat4                 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; decoder:C1|SERVO0:C5|State.Pulse                          ; decoder:C1|SERVO0:C5|State.Pulse                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; decoder:C1|SERVO0:C5|State.Relax                          ; decoder:C1|SERVO0:C5|State.Relax                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; decoder:C1|SERVO0:C5|Count[0]                             ; decoder:C1|SERVO0:C5|Count[0]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; decoder:C1|SERVO0:C5|Count[1]                             ; decoder:C1|SERVO0:C5|Count[1]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; decoder:C1|SERVO0:C5|Count[3]                             ; decoder:C1|SERVO0:C5|Count[3]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; decoder:C1|SERVO0:C5|State.Init                           ; decoder:C1|SERVO0:C5|State.Init                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; decoder:C1|SERVO0:C5|Count[8]                             ; decoder:C1|SERVO0:C5|Count[8]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; decoder:C1|SERVO:C5|State.Pulse                           ; decoder:C1|SERVO:C5|State.Pulse                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; decoder:C1|SERVO:C5|State.Relax                           ; decoder:C1|SERVO:C5|State.Relax                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; decoder:C1|SERVO:C5|Count[0]                              ; decoder:C1|SERVO:C5|Count[0]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; decoder:C1|SERVO:C5|Count[1]                              ; decoder:C1|SERVO:C5|Count[1]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; decoder:C1|SERVO:C5|Count[3]                              ; decoder:C1|SERVO:C5|Count[3]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; decoder:C1|SERVO:C5|State.Init                            ; decoder:C1|SERVO:C5|State.Init                            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; decoder:C1|SERVO:C5|Count[8]                              ; decoder:C1|SERVO:C5|Count[8]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; decoder:C1|MAE_servo:C1|dataValid1                        ; decoder:C1|MAE_servo:C1|dataValid1                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; decoder:C1|SERVO0:C6|Count[1]                             ; decoder:C1|SERVO0:C6|Count[1]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; decoder:C1|SERVO0:C6|Count[3]                             ; decoder:C1|SERVO0:C6|Count[3]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; decoder:C1|SERVO0:C6|Count[8]                             ; decoder:C1|SERVO0:C6|Count[8]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; decoder:C1|SERVO0:C6|State.Init                           ; decoder:C1|SERVO0:C6|State.Init                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; decoder:C1|SERVO0:C6|State.Pulse                          ; decoder:C1|SERVO0:C6|State.Pulse                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; decoder:C1|SERVO0:C6|State.Relax                          ; decoder:C1|SERVO0:C6|State.Relax                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; decoder:C1|SERVO0:C6|Count[0]                             ; decoder:C1|SERVO0:C6|Count[0]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; decoder:C1|SERVO:C6|Count[1]                              ; decoder:C1|SERVO:C6|Count[1]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; decoder:C1|SERVO:C6|Count[3]                              ; decoder:C1|SERVO:C6|Count[3]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; decoder:C1|SERVO:C6|Count[8]                              ; decoder:C1|SERVO:C6|Count[8]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; decoder:C1|SERVO:C6|State.Init                            ; decoder:C1|SERVO:C6|State.Init                            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; decoder:C1|SERVO:C6|State.Pulse                           ; decoder:C1|SERVO:C6|State.Pulse                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; decoder:C1|SERVO:C6|State.Relax                           ; decoder:C1|SERVO:C6|State.Relax                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; decoder:C1|SERVO:C6|Count[0]                              ; decoder:C1|SERVO:C6|Count[0]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; decoder:C1|MAE_servo:C1|dataValid2                        ; decoder:C1|MAE_servo:C1|dataValid2                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; decoder:C1|SERVO0:C7|State.Relax                          ; decoder:C1|SERVO0:C7|State.Relax                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; decoder:C1|SERVO0:C7|Count[8]                             ; decoder:C1|SERVO0:C7|Count[8]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; decoder:C1|SERVO0:C7|State.Init                           ; decoder:C1|SERVO0:C7|State.Init                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; decoder:C1|SERVO0:C7|State.Pulse                          ; decoder:C1|SERVO0:C7|State.Pulse                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; decoder:C1|SERVO0:C7|Count[0]                             ; decoder:C1|SERVO0:C7|Count[0]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; decoder:C1|SERVO0:C7|Count[1]                             ; decoder:C1|SERVO0:C7|Count[1]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; decoder:C1|SERVO0:C7|Count[3]                             ; decoder:C1|SERVO0:C7|Count[3]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; decoder:C1|SERVO0:C5|Q                                    ; decoder:C1|SERVO0:C5|Q                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; decoder:C1|SERVO0:C6|Q                                    ; decoder:C1|SERVO0:C6|Q                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; decoder:C1|SERVO0:C7|Q                                    ; decoder:C1|SERVO0:C7|Q                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; decoder:C1|SERVO:C7|State.Relax                           ; decoder:C1|SERVO:C7|State.Relax                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; decoder:C1|SERVO:C7|Count[8]                              ; decoder:C1|SERVO:C7|Count[8]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; decoder:C1|SERVO:C7|State.Init                            ; decoder:C1|SERVO:C7|State.Init                            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; decoder:C1|SERVO:C7|State.Pulse                           ; decoder:C1|SERVO:C7|State.Pulse                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; decoder:C1|SERVO:C7|Count[0]                              ; decoder:C1|SERVO:C7|Count[0]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; decoder:C1|SERVO:C7|Count[1]                              ; decoder:C1|SERVO:C7|Count[1]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; decoder:C1|SERVO:C7|Count[3]                              ; decoder:C1|SERVO:C7|Count[3]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; decoder:C1|SERVO:C5|Q                                     ; decoder:C1|SERVO:C5|Q                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; decoder:C1|SERVO:C6|Q                                     ; decoder:C1|SERVO:C6|Q                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; decoder:C1|SERVO:C7|Q                                     ; decoder:C1|SERVO:C7|Q                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.245 ; IPUart:C0|reception:C1|MAE_reception:C1|output[7]         ; decoder:C1|MAE_servo:C1|regValue[7]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.397      ;
 ; 0.246 ; IPUart:C0|reception:C1|MAE_reception:C1|i[30]             ; IPUart:C0|reception:C1|MAE_reception:C1|i[30]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.398      ;
 ; 0.248 ; IPUart:C0|reception:C1|MAE_reception:C1|output[2]         ; decoder:C1|MAE_servo:C1|regValue[2]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.400      ;
 ; 0.258 ; decoder:C1|MAE_servo:C1|regSelector[0]                    ; decoder:C1|MAE_servo:C1|EtatPresent.Etat6                 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.410      ;
 ; 0.258 ; decoder:C1|MAE_servo:C1|regSelector[0]                    ; decoder:C1|MAE_servo:C1|dataValid0                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.410      ;
 ; 0.260 ; decoder:C1|MAE_servo:C1|regSelector[0]                    ; decoder:C1|MAE_servo:C1|EtatPresent.Etat7                 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.412      ;
-; 0.266 ; decoder:C1|SERVO0:C6|State.Init                           ; decoder:C1|SERVO0:C6|Q                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.418      ;
-; 0.293 ; decoder:C1|FDIV:C0|Tick7us                                ; decoder:C1|SERVO0:C6|State.Pulse                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.445      ;
-; 0.296 ; decoder:C1|FDIV:C0|Tick7us                                ; decoder:C1|SERVO0:C6|State.Relax                          ; clk          ; clk         ; 0.000        ; 0.000      ; 0.448      ;
-; 0.303 ; decoder:C1|FDIV:C0|Tick7us                                ; decoder:C1|SERVO0:C6|State.Idle                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.455      ;
+; 0.266 ; decoder:C1|SERVO:C6|State.Init                            ; decoder:C1|SERVO:C6|Q                                     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.418      ;
+; 0.293 ; decoder:C1|FDIV:C0|Tick7us                                ; decoder:C1|SERVO:C6|State.Pulse                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.445      ;
+; 0.296 ; decoder:C1|FDIV:C0|Tick7us                                ; decoder:C1|SERVO:C6|State.Relax                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.448      ;
+; 0.303 ; decoder:C1|FDIV:C0|Tick7us                                ; decoder:C1|SERVO:C6|State.Idle                            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.455      ;
 ; 0.312 ; decoder:C1|FDIV:C0|Count[0]                               ; decoder:C1|FDIV:C0|Count[6]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.464      ;
 ; 0.314 ; IPUart:C0|reception:C1|MAE_reception:C1|output[3]         ; decoder:C1|MAE_servo:C1|regSelector[3]                    ; clk          ; clk         ; 0.000        ; 0.001      ; 0.467      ;
 ; 0.315 ; decoder:C1|MAE_servo:C1|EtatPresent.Etat6                 ; decoder:C1|MAE_servo:C1|dataValid0                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.467      ;
@@ -793,13 +793,13 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; 0.322 ; IPUart:C0|reception:C1|MAE_reception:C1|EtatPresent.Etat6 ; IPUart:C0|reception:C1|MAE_reception:C1|EtatPresent.Etat7 ; clk          ; clk         ; 0.000        ; -0.001     ; 0.473      ;
 ; 0.325 ; IPUart:C0|reception:C1|MAE_reception:C1|output[7]         ; decoder:C1|MAE_servo:C1|regSelector[7]                    ; clk          ; clk         ; 0.000        ; 0.001      ; 0.478      ;
 ; 0.326 ; IPUart:C0|reception:C1|MAE_reception:C1|output[2]         ; decoder:C1|MAE_servo:C1|regSelector[2]                    ; clk          ; clk         ; 0.000        ; 0.001      ; 0.479      ;
-; 0.326 ; decoder:C1|MAE_servo:C1|dataValid1                        ; decoder:C1|SERVO0:C6|State.Init                           ; clk          ; clk         ; 0.000        ; 0.001      ; 0.479      ;
+; 0.326 ; decoder:C1|MAE_servo:C1|dataValid1                        ; decoder:C1|SERVO:C6|State.Init                            ; clk          ; clk         ; 0.000        ; 0.001      ; 0.479      ;
 ; 0.327 ; IPUart:C0|reception:C1|MAE_reception:C1|output[1]         ; decoder:C1|MAE_servo:C1|regValue[1]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.479      ;
 ; 0.328 ; IPUart:C0|reception:C1|MAE_reception:C1|output[6]         ; decoder:C1|MAE_servo:C1|regValue[6]                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.480      ;
 ; 0.330 ; IPUart:C0|reception:C1|MAE_reception:C1|output[5]         ; decoder:C1|MAE_servo:C1|regSelector[5]                    ; clk          ; clk         ; 0.000        ; 0.001      ; 0.483      ;
 ; 0.330 ; IPUart:C0|reception:C1|MAE_reception:C1|output[4]         ; decoder:C1|MAE_servo:C1|regValue[4]                       ; clk          ; clk         ; 0.000        ; 0.002      ; 0.484      ;
-; 0.330 ; decoder:C1|SERVO0:C7|Count[2]                             ; decoder:C1|SERVO0:C7|Count[2]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.482      ;
-; 0.347 ; decoder:C1|SERVO0:C5|Count[2]                             ; decoder:C1|SERVO0:C5|Count[2]                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.499      ;
+; 0.330 ; decoder:C1|SERVO:C7|Count[2]                              ; decoder:C1|SERVO:C7|Count[2]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.482      ;
+; 0.347 ; decoder:C1|SERVO:C5|Count[2]                              ; decoder:C1|SERVO:C5|Count[2]                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.499      ;
 ; 0.357 ; IPUart:C0|reception:C1|MAE_reception:C1|EtatPresent.Etat5 ; IPUart:C0|reception:C1|MAE_reception:C1|EtatPresent.Etat6 ; clk          ; clk         ; 0.000        ; 0.001      ; 0.510      ;
 ; 0.358 ; IPUart:C0|reception:C1|MAE_reception:C1|i[15]             ; IPUart:C0|reception:C1|MAE_reception:C1|i[15]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.510      ;
 ; 0.358 ; IPUart:C0|reception:C1|MAE_reception:C1|i[8]              ; IPUart:C0|reception:C1|MAE_reception:C1|i[8]              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.510      ;
@@ -827,7 +827,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; 0.372 ; IPUart:C0|reception:C1|MAE_reception:C1|EtatPresent.Etat1 ; IPUart:C0|reception:C1|MAE_reception:C1|EtatPresent.Etat2 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.524      ;
 ; 0.373 ; decoder:C1|FDIV:C0|Count[5]                               ; decoder:C1|FDIV:C0|Count[5]                               ; clk          ; clk         ; 0.000        ; 0.000      ; 0.525      ;
 ; 0.373 ; decoder:C1|MAE_servo:C1|EtatPresent.Etat1                 ; decoder:C1|MAE_servo:C1|EtatPresent.Etat2                 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.525      ;
-; 0.373 ; decoder:C1|SERVO0:C6|State.Idle                           ; decoder:C1|SERVO0:C6|State.Init                           ; clk          ; clk         ; 0.000        ; 0.000      ; 0.525      ;
+; 0.373 ; decoder:C1|SERVO:C6|State.Idle                            ; decoder:C1|SERVO:C6|State.Init                            ; clk          ; clk         ; 0.000        ; 0.000      ; 0.525      ;
 ; 0.374 ; IPUart:C0|reception:C1|diviseur_reception:C0|counter[4]   ; IPUart:C0|reception:C1|diviseur_reception:C0|counter[4]   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.526      ;
 ; 0.374 ; IPUart:C0|reception:C1|MAE_reception:C1|i[25]             ; IPUart:C0|reception:C1|MAE_reception:C1|i[25]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.526      ;
 ; 0.374 ; IPUart:C0|reception:C1|MAE_reception:C1|i[18]             ; IPUart:C0|reception:C1|MAE_reception:C1|i[18]             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.526      ;
@@ -1154,10 +1154,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Thu Mar 15 12:54:22 2018
+    Info: Processing started: Tue Apr 24 13:17:19 2018
 Info: Command: quartus_sta VHDL -c VHDL
 Info: qsta_default_script.tcl version: #1
-Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'VHDL.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
@@ -1214,8 +1214,8 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 528 megabytes
-    Info: Processing ended: Thu Mar 15 12:54:23 2018
+    Info: Peak virtual memory: 523 megabytes
+    Info: Processing ended: Tue Apr 24 13:17:20 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

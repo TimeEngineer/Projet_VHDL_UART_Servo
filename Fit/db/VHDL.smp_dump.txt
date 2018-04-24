@@ -1,19 +1,19 @@
 
-State Machine - |IP|decoder:C1|SERVO0:C7|State
+State Machine - |IP|decoder:C1|SERVO:C7|State
 Name State.Relax State.Pulse State.Init State.Idle 
 State.Idle 0 0 0 0 
 State.Init 0 0 1 1 
 State.Pulse 0 1 0 1 
 State.Relax 1 0 0 1 
 
-State Machine - |IP|decoder:C1|SERVO0:C6|State
+State Machine - |IP|decoder:C1|SERVO:C6|State
 Name State.Relax State.Pulse State.Init State.Idle 
 State.Idle 0 0 0 0 
 State.Init 0 0 1 1 
 State.Pulse 0 1 0 1 
 State.Relax 1 0 0 1 
 
-State Machine - |IP|decoder:C1|SERVO0:C5|State
+State Machine - |IP|decoder:C1|SERVO:C5|State
 Name State.Relax State.Pulse State.Init State.Idle 
 State.Idle 0 0 0 0 
 State.Init 0 0 1 1 

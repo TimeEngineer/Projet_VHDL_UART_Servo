@@ -1,5 +1,5 @@
 Flow report for VHDL
-Thu Mar 15 12:54:25 2018
+Tue Apr 24 13:17:52 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Flow Summary                                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Flow Status                        ; Successful - Thu Mar 15 12:54:25 2018            ;
+; Flow Status                        ; Successful - Tue Apr 24 13:17:52 2018            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; VHDL                                             ;
 ; Top-level Entity Name              ; IP                                               ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/15/2018 12:54:11 ;
+; Start date & time ; 04/24/2018 13:10:20 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; VHDL                ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 167746770699326.152111485120341       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 109952941739316.152456821901246       ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
@@ -95,12 +95,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 612 MB              ; 00:00:01                           ;
-; Fitter                    ; 00:00:04     ; 1.8                     ; 786 MB              ; 00:00:07                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 556 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 528 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 802 MB              ; 00:00:00                           ;
-; Total                     ; 00:00:08     ; --                      ; --                  ; 00:00:10                           ;
+; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 612 MB              ; 00:00:02                           ;
+; Fitter                    ; 00:00:07     ; 1.1                     ; 758 MB              ; 00:00:07                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 556 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 523 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 802 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:15     ; --                      ; --                  ; 00:00:13                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -109,11 +109,11 @@ applicable agreement for further details.
 +---------------------------+------------------+------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; pc4086           ; Linux Mint ; 17         ; x86_64         ;
-; Fitter                    ; pc4086           ; Linux Mint ; 17         ; x86_64         ;
-; Assembler                 ; pc4086           ; Linux Mint ; 17         ; x86_64         ;
-; TimeQuest Timing Analyzer ; pc4086           ; Linux Mint ; 17         ; x86_64         ;
-; EDA Netlist Writer        ; pc4086           ; Linux Mint ; 17         ; x86_64         ;
+; Analysis & Synthesis      ; pc4022           ; Linux Mint ; 17         ; x86_64         ;
+; Fitter                    ; pc4022           ; Linux Mint ; 17         ; x86_64         ;
+; Assembler                 ; pc4022           ; Linux Mint ; 17         ; x86_64         ;
+; TimeQuest Timing Analyzer ; pc4022           ; Linux Mint ; 17         ; x86_64         ;
+; EDA Netlist Writer        ; pc4022           ; Linux Mint ; 17         ; x86_64         ;
 +---------------------------+------------------+------------+------------+----------------+
 
 

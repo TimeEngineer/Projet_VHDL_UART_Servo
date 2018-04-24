@@ -442,14 +442,14 @@ output[7] <= output[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 |IP|decoder:C1
 Clk => fdiv:C0.Clk
 Clk => MAE_servo:C1.clk
-Clk => servo0:C5.Clk
-Clk => servo0:C6.Clk
-Clk => servo0:C7.Clk
+Clk => servo:C5.Clk
+Clk => servo:C6.Clk
+Clk => servo:C7.Clk
 Rst => fdiv:C0.Rst
 Rst => MAE_servo:C1.rst
-Rst => servo0:C5.Rst
-Rst => servo0:C6.Rst
-Rst => servo0:C7.Rst
+Rst => servo:C5.Rst
+Rst => servo:C6.Rst
+Rst => servo:C7.Rst
 Start => MAE_servo:C1.go
 Input[0] => MAE_servo:C1.input[0]
 Input[1] => MAE_servo:C1.input[1]
@@ -459,12 +459,12 @@ Input[4] => MAE_servo:C1.input[4]
 Input[5] => MAE_servo:C1.input[5]
 Input[6] => MAE_servo:C1.input[6]
 Input[7] => MAE_servo:C1.input[7]
-Done0 <= servo0:C5.Done
-Q0 <= servo0:C5.Q
-Done1 <= servo0:C6.Done
-Q1 <= servo0:C6.Q
-Done2 <= servo0:C7.Done
-Q2 <= servo0:C7.Q
+Done0 <= servo:C5.Done
+Q0 <= servo:C5.Q
+Done1 <= servo:C6.Done
+Q1 <= servo:C6.Q
+Done2 <= servo:C7.Done
+Q2 <= servo:C7.Q
 
 
 |IP|decoder:C1|FDIV:C0
@@ -763,7 +763,7 @@ output[6] <= Add4.DB_MAX_OUTPUT_PORT_TYPE
 output[7] <= Add4.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|IP|decoder:C1|SERVO0:C5
+|IP|decoder:C1|SERVO:C5
 Clk => Q~reg0.CLK
 Clk => Count[0].CLK
 Clk => Count[1].CLK
@@ -847,7 +847,7 @@ Done <= Done.DB_MAX_OUTPUT_PORT_TYPE
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|IP|decoder:C1|SERVO0:C6
+|IP|decoder:C1|SERVO:C6
 Clk => Q~reg0.CLK
 Clk => Count[0].CLK
 Clk => Count[1].CLK
@@ -931,7 +931,7 @@ Done <= Done.DB_MAX_OUTPUT_PORT_TYPE
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|IP|decoder:C1|SERVO0:C7
+|IP|decoder:C1|SERVO:C7
 Clk => Q~reg0.CLK
 Clk => Count[0].CLK
 Clk => Count[1].CLK
